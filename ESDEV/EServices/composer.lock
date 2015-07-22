@@ -359,16 +359,16 @@
         },
         {
             "name": "pear/console_getopt",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Console_Getopt.git",
-                "reference": "ff3eecbbc5d6e9a243f70f7cf51ca7554e4bb470"
+                "reference": "82f05cd1aa3edf34e19aa7c8ca312ce13a6a577f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/ff3eecbbc5d6e9a243f70f7cf51ca7554e4bb470",
-                "reference": "ff3eecbbc5d6e9a243f70f7cf51ca7554e4bb470",
+                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/82f05cd1aa3edf34e19aa7c8ca312ce13a6a577f",
+                "reference": "82f05cd1aa3edf34e19aa7c8ca312ce13a6a577f",
                 "shasum": ""
             },
             "type": "library",
@@ -402,7 +402,7 @@
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
-            "time": "2015-02-22 13:26:45"
+            "time": "2015-07-20 20:28:12"
         },
         {
             "name": "pear/mail",
@@ -701,16 +701,16 @@
         },
         {
             "name": "pear/structures_graph",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Structures_Graph.git",
-                "reference": "e8957d5ed48bca275cdaefa0e69a7b01cbb63340"
+                "reference": "608fdc835a62fb238e61bd1cf0aaf6c7a4420b5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Structures_Graph/zipball/e8957d5ed48bca275cdaefa0e69a7b01cbb63340",
-                "reference": "e8957d5ed48bca275cdaefa0e69a7b01cbb63340",
+                "url": "https://api.github.com/repos/pear/Structures_Graph/zipball/608fdc835a62fb238e61bd1cf0aaf6c7a4420b5c",
+                "reference": "608fdc835a62fb238e61bd1cf0aaf6c7a4420b5c",
                 "shasum": ""
             },
             "type": "library",
@@ -734,7 +734,7 @@
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Structures_Graph",
-            "time": "2015-02-26 23:12:53"
+            "time": "2015-07-20 20:05:12"
         },
         {
             "name": "pear/xml_util",

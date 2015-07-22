@@ -7,12 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     $vendorDir . '/pear/pear_exception',
-    $vendorDir . '/pear/console_getopt',
     $vendorDir . '/pear/pear-core-minimal/src',
     $vendorDir . '/pear/xml_util',
-    $vendorDir . '/pear/structures_graph',
     $vendorDir . '/pear/archive_tar',
     $vendorDir . '/pear/pear',
     $vendorDir . '/pear/mail',
     $vendorDir . '/pear/mail_mime',
+    $vendorDir . '/pear/structures_graph',
+    $vendorDir . '/pear/console_getopt',
 );
