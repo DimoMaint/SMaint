@@ -13,7 +13,8 @@
         "html2text/html2text": "@stable",
         "pear/pear": "dev-master",
         "pear/mail": "dev-master",
-        "pear/mail_mime": ">=1.8.9"
+        "pear/mail_mime": ">=1.8.9",
+        "tecnick.com/tcpdf": "@stable"
     },
     "autoload": {
         "psr-4": {
