@@ -88,90 +88,6 @@
         ]
     },
     {
-        "name": "silex/silex",
-        "version": "v1.3.0",
-        "version_normalized": "1.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/silexphp/Silex.git",
-            "reference": "2d623a4853c37005d3790e5e7897a2c30b492caf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/silexphp/Silex/zipball/2d623a4853c37005d3790e5e7897a2c30b492caf",
-            "reference": "2d623a4853c37005d3790e5e7897a2c30b492caf",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9",
-            "pimple/pimple": "~1.0",
-            "symfony/event-dispatcher": "~2.3,<3.0",
-            "symfony/http-foundation": "~2.3,<3.0",
-            "symfony/http-kernel": "~2.3,<3.0",
-            "symfony/routing": "~2.3,<3.0"
-        },
-        "require-dev": {
-            "doctrine/dbal": "~2.2",
-            "monolog/monolog": "~1.4,>=1.4.1",
-            "swiftmailer/swiftmailer": "5.*",
-            "symfony/browser-kit": "~2.3,<3.0",
-            "symfony/config": "~2.3,<3.0",
-            "symfony/css-selector": "~2.3,<3.0",
-            "symfony/debug": "~2.3,<3.0",
-            "symfony/dom-crawler": "~2.3,<3.0",
-            "symfony/finder": "~2.3,<3.0",
-            "symfony/form": "~2.3,<3.0",
-            "symfony/locale": "~2.3,<3.0",
-            "symfony/monolog-bridge": "~2.3,<3.0",
-            "symfony/options-resolver": "~2.3,<3.0",
-            "symfony/process": "~2.3,<3.0",
-            "symfony/security": "~2.3,<3.0",
-            "symfony/serializer": "~2.3,<3.0",
-            "symfony/translation": "~2.3,<3.0",
-            "symfony/twig-bridge": "~2.3,<3.0",
-            "symfony/validator": "~2.3,<3.0",
-            "twig/twig": ">=1.8.0,<2.0-dev"
-        },
-        "suggest": {
-            "symfony/browser-kit": "~2.3",
-            "symfony/css-selector": "~2.3",
-            "symfony/dom-crawler": "~2.3",
-            "symfony/form": "~2.3"
-        },
-        "time": "2015-06-04 21:27:48",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.3.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Silex\\": "src/Silex"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Igor Wiedler",
-                "email": "igor@wiedler.ch"
-            }
-        ],
-        "description": "The PHP micro-framework based on the Symfony2 Components",
-        "homepage": "http://silex.sensiolabs.org",
-        "keywords": [
-            "microframework"
-        ]
-    },
-    {
         "name": "parsecsv/php-parsecsv",
         "version": "0.4.5",
         "version_normalized": "0.4.5.0",
@@ -975,71 +891,6 @@
         "description": "More info available on: http://pear.php.net/package/Console_Getopt"
     },
     {
-        "name": "tecnick.com/tcpdf",
-        "version": "6.2.10",
-        "version_normalized": "6.2.10.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/tecnickcom/TCPDF.git",
-            "reference": "25394f75d63a46d8c60b940e5e8519369b5964eb"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/25394f75d63a46d8c60b940e5e8519369b5964eb",
-            "reference": "25394f75d63a46d8c60b940e5e8519369b5964eb",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2015-07-28 15:28:45",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "fonts",
-                "config",
-                "include",
-                "tcpdf.php",
-                "tcpdf_parser.php",
-                "tcpdf_import.php",
-                "tcpdf_barcodes_1d.php",
-                "tcpdf_barcodes_2d.php",
-                "include/tcpdf_colors.php",
-                "include/tcpdf_filters.php",
-                "include/tcpdf_font_data.php",
-                "include/tcpdf_fonts.php",
-                "include/tcpdf_images.php",
-                "include/tcpdf_static.php",
-                "include/barcodes/datamatrix.php",
-                "include/barcodes/pdf417.php",
-                "include/barcodes/qrcode.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPLv3"
-        ],
-        "authors": [
-            {
-                "name": "Nicola Asuni",
-                "email": "info@tecnick.com",
-                "homepage": "http://nicolaasuni.tecnick.com"
-            }
-        ],
-        "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
-        "homepage": "http://www.tcpdf.org/",
-        "keywords": [
-            "PDFD32000-2008",
-            "TCPDF",
-            "barcodes",
-            "datamatrix",
-            "pdf",
-            "pdf417",
-            "qrcode"
-        ]
-    },
-    {
         "name": "symfony/debug",
         "version": "v2.7.3",
         "version_normalized": "2.7.3.0",
@@ -1437,6 +1288,155 @@
         "keywords": [
             "archive",
             "tar"
+        ]
+    },
+    {
+        "name": "silex/silex",
+        "version": "v1.3.1",
+        "version_normalized": "1.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/silexphp/Silex.git",
+            "reference": "0507b772519ab0d9dd258bb39748921229ad5c46"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/silexphp/Silex/zipball/0507b772519ab0d9dd258bb39748921229ad5c46",
+            "reference": "0507b772519ab0d9dd258bb39748921229ad5c46",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9",
+            "pimple/pimple": "~1.0",
+            "symfony/event-dispatcher": "~2.3,<3.0",
+            "symfony/http-foundation": "~2.3,<3.0",
+            "symfony/http-kernel": "~2.3,<3.0",
+            "symfony/routing": "~2.3,<3.0"
+        },
+        "require-dev": {
+            "doctrine/dbal": "~2.2",
+            "monolog/monolog": "~1.4,>=1.4.1",
+            "swiftmailer/swiftmailer": "5.*",
+            "symfony/browser-kit": "~2.3,<3.0",
+            "symfony/config": "~2.3,<3.0",
+            "symfony/css-selector": "~2.3,<3.0",
+            "symfony/debug": "~2.3,<3.0",
+            "symfony/dom-crawler": "~2.3,<3.0",
+            "symfony/finder": "~2.3,<3.0",
+            "symfony/form": "~2.3,<3.0",
+            "symfony/locale": "~2.3,<3.0",
+            "symfony/monolog-bridge": "~2.3,<3.0",
+            "symfony/options-resolver": "~2.3,<3.0",
+            "symfony/process": "~2.3,<3.0",
+            "symfony/security": "~2.3,<3.0",
+            "symfony/serializer": "~2.3,<3.0",
+            "symfony/translation": "~2.3,<3.0",
+            "symfony/twig-bridge": "~2.3,<3.0",
+            "symfony/validator": "~2.3,<3.0",
+            "twig/twig": ">=1.8.0,<2.0-dev"
+        },
+        "suggest": {
+            "symfony/browser-kit": "~2.3",
+            "symfony/css-selector": "~2.3",
+            "symfony/dom-crawler": "~2.3",
+            "symfony/form": "~2.3"
+        },
+        "time": "2015-08-04 10:41:12",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Silex\\": "src/Silex"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            }
+        ],
+        "description": "The PHP micro-framework based on the Symfony2 Components",
+        "homepage": "http://silex.sensiolabs.org",
+        "keywords": [
+            "microframework"
+        ]
+    },
+    {
+        "name": "tecnick.com/tcpdf",
+        "version": "6.2.10",
+        "version_normalized": "6.2.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tecnickcom/TCPDF.git",
+            "reference": "25394f75d63a46d8c60b940e5e8519369b5964eb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/25394f75d63a46d8c60b940e5e8519369b5964eb",
+            "reference": "25394f75d63a46d8c60b940e5e8519369b5964eb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-07-28 15:28:45",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "fonts",
+                "config",
+                "include",
+                "tcpdf.php",
+                "tcpdf_parser.php",
+                "tcpdf_import.php",
+                "tcpdf_barcodes_1d.php",
+                "tcpdf_barcodes_2d.php",
+                "include/tcpdf_colors.php",
+                "include/tcpdf_filters.php",
+                "include/tcpdf_font_data.php",
+                "include/tcpdf_fonts.php",
+                "include/tcpdf_images.php",
+                "include/tcpdf_static.php",
+                "include/barcodes/datamatrix.php",
+                "include/barcodes/pdf417.php",
+                "include/barcodes/qrcode.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPLv3"
+        ],
+        "authors": [
+            {
+                "name": "Nicola Asuni",
+                "email": "info@tecnick.com",
+                "homepage": "http://nicolaasuni.tecnick.com"
+            }
+        ],
+        "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+        "homepage": "http://www.tcpdf.org/",
+        "keywords": [
+            "PDFD32000-2008",
+            "TCPDF",
+            "barcodes",
+            "datamatrix",
+            "pdf",
+            "pdf417",
+            "qrcode"
         ]
     }
 ]
