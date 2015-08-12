@@ -186,16 +186,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "dc5150cc608f2334c72c3b6a553ec9668a4156b0"
+                "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/dc5150cc608f2334c72c3b6a553ec9668a4156b0",
-                "reference": "dc5150cc608f2334c72c3b6a553ec9668a4156b0",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c0c0b4bee3aabce7182876b0d912ef2595563db7",
+                "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7",
                 "shasum": ""
             },
             "require": {
@@ -232,7 +232,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.15.x-dev"
+                    "dev-master": "1.16.x-dev"
                 }
             },
             "autoload": {
@@ -258,7 +258,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-07-12 13:54:09"
+            "time": "2015-08-09 17:44:44"
         },
         {
             "name": "parsecsv/php-parsecsv",
@@ -467,23 +467,20 @@
         },
         {
             "name": "pear/mail_mime",
-            "version": "1.8.9",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Mail_Mime.git",
-                "reference": "407c330caf79ae36090c5ad6ed8b6fc8954d2828"
+                "reference": "66b2a01acabe0b8d0ce606833d5cefc1a49a8887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Mail_Mime/zipball/407c330caf79ae36090c5ad6ed8b6fc8954d2828",
-                "reference": "407c330caf79ae36090c5ad6ed8b6fc8954d2828",
+                "url": "https://api.github.com/repos/pear/Mail_Mime/zipball/66b2a01acabe0b8d0ce606833d5cefc1a49a8887",
+                "reference": "66b2a01acabe0b8d0ce606833d5cefc1a49a8887",
                 "shasum": ""
             },
             "require": {
-                "pear/pear_exception": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
+                "pear/pear-core-minimal": "*"
             },
             "type": "library",
             "autoload": {
@@ -510,8 +507,9 @@
                     "role": "Lead"
                 }
             ],
-            "description": "More info available on: http://pear.php.net/package/Mail_Mime",
-            "time": "2014-05-14 08:27:27"
+            "description": "Mail_Mime provides classes to create MIME messages",
+            "homepage": "http://pear.php.net/package/Mail_Mime",
+            "time": "2015-08-05 12:54:39"
         },
         {
             "name": "pear/pear",
@@ -1335,16 +1333,16 @@
         },
         {
             "name": "tecnick.com/tcpdf",
-            "version": "6.2.10",
+            "version": "6.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "25394f75d63a46d8c60b940e5e8519369b5964eb"
+                "reference": "354433a33946ae7497c3eab291eaaf814bccbfab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/25394f75d63a46d8c60b940e5e8519369b5964eb",
-                "reference": "25394f75d63a46d8c60b940e5e8519369b5964eb",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/354433a33946ae7497c3eab291eaaf814bccbfab",
+                "reference": "354433a33946ae7497c3eab291eaaf814bccbfab",
                 "shasum": ""
             },
             "require": {
@@ -1394,7 +1392,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2015-07-28 15:28:45"
+            "time": "2015-08-02 12:30:27"
         }
     ],
     "packages-dev": [],

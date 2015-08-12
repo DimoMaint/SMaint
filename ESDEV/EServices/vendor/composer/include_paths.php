@@ -11,8 +11,8 @@ return array(
     $vendorDir . '/pear/xml_util',
     $vendorDir . '/pear/pear',
     $vendorDir . '/pear/mail',
-    $vendorDir . '/pear/mail_mime',
     $vendorDir . '/pear/structures_graph',
     $vendorDir . '/pear/console_getopt',
     $vendorDir . '/pear/archive_tar',
+    $vendorDir . '/pear/mail_mime',
 );

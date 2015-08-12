@@ -28,7 +28,7 @@
     "js-base64": "~2.1.8",
     "html5-polyfills": "*",
     "jquery.tocify.js": "~1.9.0",
-    "mjolnic-bootstrap-colorpicker": "~2.2.0",
+    "mjolnic-bootstrap-colorpicker": "~2.3.0",
     "moment": "~2.10.3"
   },
   "resolutions": {
@@ -36,6 +36,7 @@
     "jquery-ui": "~1.11.4",
     "bootstrap-sass": "~3.3.5",
     "eonasdan-bootstrap-datetimepicker": "~4.15.35",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "mjolnic-bootstrap-colorpicker": "~2.3.0"
   }
 }
