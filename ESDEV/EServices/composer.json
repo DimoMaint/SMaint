@@ -10,10 +10,7 @@
         "devster/ubench": "@stable",
         "monolog/monolog": "@stable",
         "swiftmailer/swiftmailer": "@stable",
-        "html2text/html2text": "@stable",
-        "pear/pear": "dev-master",
-        "pear/mail": "dev-master",
-        "pear/mail_mime": ">=1.8.9",
+        "html2text/html2text": "@stable",        
         "tecnick.com/tcpdf": "@stable"
     },
     "autoload": {
@@ -22,11 +19,5 @@
             "App\\Models\\": "api/App/Models/",
             "App\\Services\\": "api/App/Services/"
         }
-    },
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "http://pear.php.net"
-        }
-    ]
+    }
 }
