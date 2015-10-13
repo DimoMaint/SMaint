@@ -1,5 +1,5 @@
 /*!
-	Autosize 3.0.9
+	Autosize 3.0.13
 	license: MIT
 	http://www.jacklmoore.com/autosize
 */
@@ -18,6 +18,21 @@
 })(this, function (exports, module) {
 	'use strict';
 
+	var set = typeof Set === 'function' ? new Set() : (function () {
+		var list = [];
+
+		return {
+			has: function has(key) {
+				return Boolean(list.indexOf(key) > -1);
+			},
+			add: function add(key) {
+				list.push(key);
+			},
+			'delete': function _delete(key) {
+				list.splice(list.indexOf(key), 1);
+			} };
+	})();
+
 	function assign(ta) {
 		var _ref = arguments[1] === undefined ? {} : arguments[1];
 
@@ -26,13 +41,16 @@
 		var _ref$setOverflowY = _ref.setOverflowY;
 		var setOverflowY = _ref$setOverflowY === undefined ? true : _ref$setOverflowY;
 
-		if (!ta || !ta.nodeName || ta.nodeName !== 'TEXTAREA' || ta.hasAttribute('data-autosize-on')) return;
+		if (!ta || !ta.nodeName || ta.nodeName !== 'TEXTAREA' || set.has(ta)) return;
 
 		var heightOffset = null;
-		var overflowY = 'hidden';
+		var overflowY = null;
+		var clientWidth = ta.clientWidth;
 
 		function init() {
 			var style = window.getComputedStyle(ta, null);
+
+			overflowY = style.overflowY;
 
 			if (style.resize === 'vertical') {
 				ta.style.resize = 'none';
@@ -93,6 +111,9 @@
 
 			ta.style.height = endHeight + 'px';
 
+			// used to check if an update is actually necessary on window.resize
+			clientWidth = ta.clientWidth;
+
 			// prevents scroll-position jumping
 			document.documentElement.scrollTop = htmlTop;
 			document.body.scrollTop = bodyTop;
@@ -122,12 +143,18 @@
 			}
 		}
 
+		var pageResize = function pageResize() {
+			if (ta.clientWidth !== clientWidth) {
+				update();
+			}
+		};
+
 		var destroy = (function (style) {
-			window.removeEventListener('resize', update);
+			window.removeEventListener('resize', pageResize);
 			ta.removeEventListener('input', update);
 			ta.removeEventListener('keyup', update);
-			ta.removeAttribute('data-autosize-on');
 			ta.removeEventListener('autosize:destroy', destroy);
+			set['delete'](ta);
 
 			Object.keys(style).forEach(function (key) {
 				ta.style[key] = style[key];
@@ -148,14 +175,11 @@
 			ta.addEventListener('keyup', update);
 		}
 
-		window.addEventListener('resize', update);
+		window.addEventListener('resize', pageResize);
 		ta.addEventListener('input', update);
 		ta.addEventListener('autosize:update', update);
-		ta.setAttribute('data-autosize-on', true);
+		set.add(ta);
 
-		if (setOverflowY) {
-			ta.style.overflowY = 'hidden';
-		}
 		if (setOverflowX) {
 			ta.style.overflowX = 'hidden';
 			ta.style.wordWrap = 'break-word';

@@ -1,11 +1,30 @@
+const set = (typeof Set === "function") ? new Set() : (function () {
+	const list = [];
+
+	return {
+		has(key) {
+			return Boolean(list.indexOf(key) > -1);
+		},
+		add(key) {
+			list.push(key);
+		},
+		delete(key) {
+			list.splice(list.indexOf(key), 1);
+		},
+	}
+})();
+
 function assign(ta, {setOverflowX = true, setOverflowY = true} = {}) {
-	if (!ta || !ta.nodeName || ta.nodeName !== 'TEXTAREA' || ta.hasAttribute('data-autosize-on')) return;
+	if (!ta || !ta.nodeName || ta.nodeName !== 'TEXTAREA' || set.has(ta)) return;
 
 	let heightOffset = null;
-	let overflowY = 'hidden';
+	let overflowY = null;
+	let clientWidth = ta.clientWidth;
 
 	function init() {
 		const style = window.getComputedStyle(ta, null);
+
+		overflowY = style.overflowY;
 
 		if (style.resize === 'vertical') {
 			ta.style.resize = 'none';
@@ -66,6 +85,9 @@ function assign(ta, {setOverflowX = true, setOverflowY = true} = {}) {
 
 		ta.style.height = endHeight+'px';
 
+		// used to check if an update is actually necessary on window.resize
+		clientWidth = ta.clientWidth;
+
 		// prevents scroll-position jumping
 		document.documentElement.scrollTop = htmlTop;
 		document.body.scrollTop = bodyTop;
@@ -73,7 +95,7 @@ function assign(ta, {setOverflowX = true, setOverflowY = true} = {}) {
 
 	function update() {
 		const startHeight = ta.style.height;
-		
+
 		resize();
 
 		const style = window.getComputedStyle(ta, null);
@@ -95,12 +117,18 @@ function assign(ta, {setOverflowX = true, setOverflowY = true} = {}) {
 		}
 	}
 
+	const pageResize = () => {
+		if (ta.clientWidth !== clientWidth) {
+			update();
+		}
+	};
+
 	const destroy = style => {
-		window.removeEventListener('resize', update);
+		window.removeEventListener('resize', pageResize);
 		ta.removeEventListener('input', update);
 		ta.removeEventListener('keyup', update);
-		ta.removeAttribute('data-autosize-on');
 		ta.removeEventListener('autosize:destroy', destroy);
+		set.delete(ta);
 
 		Object.keys(style).forEach(key => {
 			ta.style[key] = style[key];
@@ -122,14 +150,11 @@ function assign(ta, {setOverflowX = true, setOverflowY = true} = {}) {
 		ta.addEventListener('keyup', update);
 	}
 
-	window.addEventListener('resize', update);
+	window.addEventListener('resize', pageResize);
 	ta.addEventListener('input', update);
 	ta.addEventListener('autosize:update', update);
-	ta.setAttribute('data-autosize-on', true);
+	set.add(ta);
 
-	if (setOverflowY) {
-		ta.style.overflowY = 'hidden';
-	}
 	if (setOverflowX) {
 		ta.style.overflowX = 'hidden';
 		ta.style.wordWrap = 'break-word';

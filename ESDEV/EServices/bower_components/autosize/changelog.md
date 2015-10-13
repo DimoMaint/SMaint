@@ -1,5 +1,18 @@
 ## Changelog
 
+##### v.3.0.13 - 2015-09-26
+* Fixed scroll-bar jumpiness in iOS. Merged #261, fixes #207.
+* Fixed reflowing of initial text in Chrome and Safari.
+
+##### v.3.0.12 - 2015-09-14
+* Merged changes were discarded when building new dist files.  Merged #255, Fixes #257 for real this time.
+
+##### v.3.0.11 - 2015-09-14
+* Fixed regression from 3.0.10 that caused an error with ES5 browsers.  Merged #255, Fixes #257.
+
+##### v.3.0.10 - 2015-09-10
+* Removed data attribute as a way of tracking which elements autosize has been assigned to. fixes #254, fixes #200.
+
 ##### v.3.0.9 - 2015-09-02
 * Fixed issue with assigning autosize to detached nodes. Merged #253, Fixes #234.
 
