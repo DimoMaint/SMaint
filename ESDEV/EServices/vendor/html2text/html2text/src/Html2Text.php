@@ -38,16 +38,6 @@ class Html2Text
     protected $text;
 
     /**
-     * Maximum width of the formatted text, in columns.
-     *
-     * Set this value to 0 (or less) to ignore word wrapping
-     * and not constrain text to a fixed-width column.
-     *
-     * @type integer
-     */
-    protected $width = 70;
-
-    /**
      * List of preg* regular expression patterns to search for,
      * used in conjunction with $replace.
      *
@@ -77,6 +67,7 @@ class Html2Text
         '/(<tr[^>]*>|<\/tr>)/i',                          // <tr> and </tr>
         '/<td[^>]*>(.*?)<\/td>/i',                        // <td> and </td>
         '/<span class="_html2text_ignore">.+?<\/span>/i', // <span class="_html2text_ignore">...</span>
+        '/<(img)[^>]*alt=\"([^>"]+)\"[^>]*>/i',           // <img> with alt tag
     );
 
     /**
@@ -107,7 +98,8 @@ class Html2Text
         "\n\n",                          // <table> and </table>
         "\n",                            // <tr> and </tr>
         "\t\t\\1\n",                     // <td> and </td>
-        ""                               // <span class="_html2text_ignore">...</span>
+        "",                              // <span class="_html2text_ignore">...</span>
+        '[\\2]',                         // <img> with alt tag
     );
 
     /**
@@ -330,7 +322,7 @@ class Html2Text
     {
         $this->linkList = array();
 
-        $text = trim(stripslashes($this->html));
+        $text = trim($this->html);
 
         $this->converter($text);
 
@@ -558,7 +550,7 @@ class Html2Text
      * @param  string $str Text to convert
      * @return string Converted text
      */
-    private function toupper($str)
+    protected function toupper($str)
     {
         // string can contain HTML tags
         $chunks = preg_split('/(<[^>]*>)/', $str, null, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
@@ -579,7 +571,7 @@ class Html2Text
      * @param  string $str Text to convert
      * @return string Converted text
      */
-    private function strtoupper($str)
+    protected function strtoupper($str)
     {
         $str = html_entity_decode($str, ENT_COMPAT, self::ENCODING);
 
