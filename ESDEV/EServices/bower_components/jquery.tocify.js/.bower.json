@@ -19,7 +19,6 @@
     "commit": "c179865a65c86e9323cdf2b9bfc66f812f077079"
   },
   "_source": "git://github.com/gfranko/jquery.tocify.js.git",
-  "_target": "~1.9.0",
-  "_originalSource": "jquery.tocify.js",
-  "_direct": true
+  "_target": "*",
+  "_originalSource": "jquery.tocify.js"
 }
