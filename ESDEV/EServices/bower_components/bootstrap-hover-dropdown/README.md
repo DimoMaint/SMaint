@@ -78,7 +78,7 @@ This also works with submenus without any other configuring since Bootstrap alre
 
 * **delay**: *(optional)* The delay in miliseconds. This is the time to wait before closing a dropdown when the mouse is no longer over the dropdown or the button/nav item that activated it. Defaults to `500`.
 * **instantlyCloseOthers**: *(optional)* A boolean value that when true, will instantly close all other dropdowns matched by the selector used when you activate a new navigation. This is nice for when you have dropdowns close together that may overlap. Default is `true`.
-* **hoverDealy**: *(optional)* A delay *before opening* in miliseconds. Some people argue this improves user experience as it decreases the number of accidental menu openings. Defaults to `0`.
+* **hoverDelay**: *(optional)* A delay *before opening* in miliseconds. Some people argue this improves user experience as it decreases the number of accidental menu openings. Defaults to `0`.
 
 ## Demo
 
@@ -94,6 +94,8 @@ This plugin purposedly lets you choose a selector (as opposed to apply this to e
 
 I'm a slacker and only started keeping track of changes/bug fixes starting in March of 2013.
 
+* **2015-12-01** *[v2.2.1]* Update README
+* **2015-12-01** *[v2.2.0]* New logic: don't do anything when the navbar is collapsed 
 * **2015-02-07** *[v2.1.3]* Update version in JS files
 * **2015-02-07** *[v2.1.2]* Forgot to minify the last couple updates...
 * **2015-02-07** *[v2.1.1]* Merged another PR: `browserify` compatibility [#100](/../../issues/100).

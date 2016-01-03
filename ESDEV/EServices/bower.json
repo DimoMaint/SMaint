@@ -29,7 +29,9 @@
     "html5-polyfills": "latest",
     "jquery.tocify.js": "latest",
     "mjolnic-bootstrap-colorpicker": "latest",
-    "moment": "latest"
+    "moment": "latest",
+	"jQuery.scrollIntoView": "master",
+	"signature-pad": "latest"
   },
   "resolutions": {
     "jquery": "~2.1.4",
