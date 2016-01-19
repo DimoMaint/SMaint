@@ -18,14 +18,13 @@
     "type": "git",
     "url": "git://github.com/remy/polyfills.git"
   },
-  "_release": "768ce355de",
+  "_release": "afeef96367",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "768ce355de8f31d8d0a99aa3aba3708daa54e873"
+    "commit": "afeef963678fa220f96ac4b6ce9c14983ef58131"
   },
   "_source": "git://github.com/remy/polyfills.git",
   "_target": "*",
-  "_originalSource": "html5-polyfills",
-  "_direct": true
+  "_originalSource": "html5-polyfills"
 }
