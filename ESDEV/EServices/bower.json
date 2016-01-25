@@ -26,11 +26,10 @@
         "font-awesome": "latest",
         "jquery-form": "3.51",
         "js-base64": "latest",
-        "html5-polyfills": "latest",
-        "jquery.tocify.js": "latest",
+        "html5-polyfills": "latest",        
         "mjolnic-bootstrap-colorpicker": "latest",
         "moment": "latest",
-        "jQuery.scrollIntoView": "master",
+        "jQuery.scrollIntoView": "latest",
         "signature-pad": "latest"
     },
     "resolutions": {

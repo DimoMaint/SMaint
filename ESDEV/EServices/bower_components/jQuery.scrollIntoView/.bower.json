@@ -14,6 +14,6 @@
     "commit": "2fbb80bec47bc0548dbefc9be371f98be96873f5"
   },
   "_source": "git://github.com/Arwid/jQuery.scrollIntoView.git",
-  "_target": "master",
+  "_target": "*",
   "_originalSource": "jQuery.scrollIntoView"
 }
