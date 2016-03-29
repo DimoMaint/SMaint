@@ -49,25 +49,25 @@ class Html2Text
     protected $search = array(
         "/\r/",                                           // Non-legal carriage return
         "/[\n\t]+/",                                      // Newlines and tabs
-        '/<head[^>]*>.*?<\/head>/i',                      // <head>
-        '/<script[^>]*>.*?<\/script>/i',                  // <script>s -- which strip_tags supposedly has problems with
-        '/<style[^>]*>.*?<\/style>/i',                    // <style>s -- which strip_tags supposedly has problems with
-        '/<i[^>]*>(.*?)<\/i>/i',                          // <i>
-        '/<em[^>]*>(.*?)<\/em>/i',                        // <em>
-        '/(<ul[^>]*>|<\/ul>)/i',                          // <ul> and </ul>
-        '/(<ol[^>]*>|<\/ol>)/i',                          // <ol> and </ol>
-        '/(<dl[^>]*>|<\/dl>)/i',                          // <dl> and </dl>
-        '/<li[^>]*>(.*?)<\/li>/i',                        // <li> and </li>
-        '/<dd[^>]*>(.*?)<\/dd>/i',                        // <dd> and </dd>
-        '/<dt[^>]*>(.*?)<\/dt>/i',                        // <dt> and </dt>
-        '/<li[^>]*>/i',                                   // <li>
-        '/<hr[^>]*>/i',                                   // <hr>
-        '/<div[^>]*>/i',                                  // <div>
-        '/(<table[^>]*>|<\/table>)/i',                    // <table> and </table>
-        '/(<tr[^>]*>|<\/tr>)/i',                          // <tr> and </tr>
-        '/<td[^>]*>(.*?)<\/td>/i',                        // <td> and </td>
+        '/<head\b[^>]*>.*?<\/head>/i',                    // <head>
+        '/<script\b[^>]*>.*?<\/script>/i',                // <script>s -- which strip_tags supposedly has problems with
+        '/<style\b[^>]*>.*?<\/style>/i',                  // <style>s -- which strip_tags supposedly has problems with
+        '/<i\b[^>]*>(.*?)<\/i>/i',                        // <i>
+        '/<em\b[^>]*>(.*?)<\/em>/i',                      // <em>
+        '/(<ul\b[^>]*>|<\/ul>)/i',                        // <ul> and </ul>
+        '/(<ol\b[^>]*>|<\/ol>)/i',                        // <ol> and </ol>
+        '/(<dl\b[^>]*>|<\/dl>)/i',                        // <dl> and </dl>
+        '/<li\b[^>]*>(.*?)<\/li>/i',                      // <li> and </li>
+        '/<dd\b[^>]*>(.*?)<\/dd>/i',                      // <dd> and </dd>
+        '/<dt\b[^>]*>(.*?)<\/dt>/i',                      // <dt> and </dt>
+        '/<li\b[^>]*>/i',                                 // <li>
+        '/<hr\b[^>]*>/i',                                 // <hr>
+        '/<div\b[^>]*>/i',                                // <div>
+        '/(<table\b[^>]*>|<\/table>)/i',                  // <table> and </table>
+        '/(<tr\b[^>]*>|<\/tr>)/i',                        // <tr> and </tr>
+        '/<td\b[^>]*>(.*?)<\/td>/i',                      // <td> and </td>
         '/<span class="_html2text_ignore">.+?<\/span>/i', // <span class="_html2text_ignore">...</span>
-        '/<(img)[^>]*alt=\"([^>"]+)\"[^>]*>/i',           // <img> with alt tag
+        '/<(img)\b[^>]*alt=\"([^>"]+)\"[^>]*>/i',         // <img> with alt tag
     );
 
     /**
@@ -436,7 +436,8 @@ class Html2Text
     {
         // get the content of PRE element
         while (preg_match('/<pre[^>]*>(.*)<\/pre>/ismU', $text, $matches)) {
-            $this->preContent = $matches[1];
+            // Replace br tags with newlines to prevent the search-and-replace callback from killing whitespace
+            $this->preContent = preg_replace('/(<br\b[^>]*>)/i', "\n", $matches[1]);
 
             // Run our defined tags search-and-replace with callback
             $this->preContent = preg_replace_callback(
@@ -472,11 +473,13 @@ class Html2Text
     protected function convertBlockquotes(&$text)
     {
         if (preg_match_all('/<\/*blockquote[^>]*>/i', $text, $matches, PREG_OFFSET_CAPTURE)) {
+            $originalText = $text;
             $start = 0;
             $taglen = 0;
             $level = 0;
             $diff = 0;
             foreach ($matches[0] as $m) {
+                $m[1] = mb_strlen(substr($originalText, 0, $m[1]));
                 if ($m[0][0] == '<' && $m[0][1] == '/') {
                     $level--;
                     if ($level < 0) {

@@ -12,7 +12,7 @@
         "swiftmailer/swiftmailer": "@stable",
         "html2text/html2text": "@stable",
         "tecnick.com/tcpdf": "@stable",
-        "google/apiclient": "@stable"
+        "google/apiclient": "@stable"		
     },
     "autoload": {
         "psr-4": {

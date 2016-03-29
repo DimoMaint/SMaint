@@ -30,10 +30,7 @@
         "moment": "latest",
         "jQuery.scrollIntoView": "latest",
         "signature-pad": "latest",
-        "smartmenus": "latest",
-		"metisMenu": "latest",
-		"bootstrap-hover-dropdown": "latest",
-		"bootstrap-submenu": "latest"
+        "smartmenus": "latest"
     },
     "resolutions": {
         "jquery": "~2.2.0",
