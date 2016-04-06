@@ -6,11 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
     'Symfony\\Component\\HttpKernel\\' => array($vendorDir . '/symfony/http-kernel'),
     'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
     'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
     'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
+    'SmartVersion\\' => array($baseDir . '/source/_module/SmartVersion'),
     'Silex\\' => array($vendorDir . '/silex/silex/src/Silex'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Html2Text\\' => array($vendorDir . '/html2text/html2text/src', $vendorDir . '/html2text/html2text/test'),
