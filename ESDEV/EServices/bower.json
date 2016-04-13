@@ -20,7 +20,7 @@
         "autosize": "latest",
         "bootbox": "latest",
         "bootstrap-sass": "~3.3.5",
-        "eonasdan-bootstrap-datetimepicker": "latest",
+    "eonasdan-bootstrap-datetimepicker": "4.15.35",
         "bootstrap-multiselect": "latest",
         "font-awesome": "latest",
         "jquery-form": "3.51",
@@ -36,7 +36,7 @@
         "jquery": "~2.2.0",
         "jquery-ui": "~1.11.4",
         "bootstrap-sass": "~3.3.5",
-        "eonasdan-bootstrap-datetimepicker": "~4.17.37",
+    "eonasdan-bootstrap-datetimepicker": "~4.15.35",
         "font-awesome": "~4.4.0",
         "mjolnic-bootstrap-colorpicker": "~2.3.0"
     }
