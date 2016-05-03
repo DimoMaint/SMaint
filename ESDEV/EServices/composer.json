@@ -11,7 +11,7 @@
         "monolog/monolog": "@stable",
         "swiftmailer/swiftmailer": "@stable",
         "html2text/html2text": "@stable",
-        "tecnick.com/tcpdf": "@stable",
+        "tecnickcom/tcpdf": "@stable",
         "google/apiclient": "@stable"
     },
     "autoload": {
