@@ -20,7 +20,7 @@
     "tag": "2.1.9",
     "commit": "9192c510f5ed604d9e9dcdbb6760eba5a9eb2851"
   },
-  "_source": "git://github.com/dankogai/js-base64.git",
+  "_source": "https://github.com/dankogai/js-base64.git",
   "_target": "*",
   "_originalSource": "js-base64"
 }

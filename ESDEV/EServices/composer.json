@@ -19,7 +19,9 @@
             "App\\Controllers\\": "api/App/Controllers/",
             "App\\Models\\": "api/App/Models/",
             "App\\Services\\": "api/App/Services/",
-            "SmartVersion\\": "source/_module/SmartVersion"
+            "SmartVersion\\": "source/_module/SmartVersion",
+            "php_class\\": "source/php_class",
+            "php_impr\\": "source/php_impr"
         }
     }
 }

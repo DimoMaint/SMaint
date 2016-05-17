@@ -24,7 +24,7 @@
     "branch": "master",
     "commit": "afeef963678fa220f96ac4b6ce9c14983ef58131"
   },
-  "_source": "git://github.com/remy/polyfills.git",
+  "_source": "https://github.com/remy/polyfills.git",
   "_target": "*",
   "_originalSource": "html5-polyfills"
 }
