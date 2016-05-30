@@ -4403,4 +4403,7 @@ return array(
     'TCPDF_STATIC' => $vendorDir . '/tecnickcom/tcpdf/include/tcpdf_static.php',
     'Ubench' => $vendorDir . '/devster/ubench/src/Ubench.php',
     'parseCSV' => $vendorDir . '/parsecsv/php-parsecsv/parsecsv.lib.php',
+    'php_class\\IO' => $baseDir . '/source/php_class/io.class.php',
+    'php_class\\Menu' => $baseDir . '/source/php_class/Menu.php',
+    'php_class\\PhpStaticClass' => $baseDir . '/source/php_class/PhpStaticClass.php',
 );
