@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Ubench' => array($vendorDir . '/devster/ubench/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
-    'Pimple' => array($vendorDir . '/pimple/pimple/lib'),
+    'Pimple' => array($vendorDir . '/pimple/pimple/src'),
 );
