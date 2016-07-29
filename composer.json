@@ -1,0 +1,31 @@
+{
+    "name": "dimomaint/servicemaint",
+    "description": "Logiciel SAV",
+    "licence": "proprietary",
+    "require": {
+        "silex/silex": "@stable",
+        "fzaninotto/faker": "@stable",
+        "donatj/phpuseragentparser": "@stable",
+        "parsecsv/php-parsecsv": "@stable",
+        "devster/ubench": "@stable",
+        "monolog/monolog": "@stable",
+        "swiftmailer/swiftmailer": "@stable",
+        "html2text/html2text": "@stable",
+        "tecnickcom/tcpdf": "@stable",
+        "google/apiclient": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Controllers\\": "ESDEV/EServices/api/App/Controllers/",
+            "App\\Models\\": "ESDEV/EServices/api/App/Models/",
+            "App\\Services\\": "ESDEV/EServices/api/App/Services/",
+            "SmartVersion\\": "ESDEV/EServices/source/_module/SmartVersion",
+            "PhpClass\\": "ESDEV/EServices/source/PhpClass",
+            "php_impr\\": "ESDEV/EServices/source/php_impr",
+            "Process\\": "ESDEV/EServices/source/Process",
+            "MenuBundle\\": "ESDEV/EServices/source/_module/MenuBundle",
+            "ListAndForm\\": "ESDEV/EServices/source/_module/ListAndForm",
+            "StandardQueryBundle\\": "ESDEV/EServices/source/StandardQueryBundle"
+        }
+    }
+}
