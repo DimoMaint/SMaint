@@ -16,7 +16,7 @@
     ],
     "dependencies": {
         "requirejs": "latest",
-        "jquery": "~2.2.0",
+        "jquery": "2.*",
         "jquery-ui": "latest",
         "autosize": "latest",
         "bootbox": "latest",
