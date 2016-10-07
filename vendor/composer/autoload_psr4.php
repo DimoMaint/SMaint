@@ -17,6 +17,7 @@ return array(
     'StandardQueryBundle\\' => array($baseDir . '/ESDEV/EServices/source/StandardQueryBundle'),
     'SmartVersion\\' => array($baseDir . '/ESDEV/EServices/source/_module/SmartVersion'),
     'Silex\\' => array($vendorDir . '/silex/silex/src/Silex'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'Process\\' => array($baseDir . '/ESDEV/EServices/source/Process'),

@@ -7,8 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Ubench' => array($vendorDir . '/devster/ubench/src'),
-    'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
-    'Google_Service_' => array($vendorDir . '/google/apiclient-services'),
+    'Google_Service_' => array($vendorDir . '/google/apiclient-services/src'),
     'Google_' => array($vendorDir . '/google/apiclient/src'),
 );
