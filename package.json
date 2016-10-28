@@ -1,0 +1,25 @@
+{
+  "name": "dimomaintservices",
+  "version": "6.3.0",
+  "description": "Sav program",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {   
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+	"gulp-sourcemaps": "^1.6.0",
+    "gulp-requirejs-optimize": "^1.2.0",
+    "requirejs": "^2.2.0",
+    "watch": "^0.19.1"
+  },
+  "scripts": {    
+    "requirejsOptimize": "gulp requirejsOptimize",
+	"watch" : "gulp watch"
+  },
+  "author": "dimomaint",
+  "license": "ISC"
+}
