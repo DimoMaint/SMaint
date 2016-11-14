@@ -1,24 +1,32 @@
 {
   "name": "dimomaintservices",
-  "version": "6.3.0",
+  "version": "7.0.0",
   "description": "Sav program",
   "main": "gulpfile.js",
   "directories": {
     "test": "tests"
   },
-  "dependencies": {   
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-	"gulp-sourcemaps": "^1.6.0",
-    "gulp-requirejs-optimize": "^1.2.0",
-    "requirejs": "^2.2.0",
-    "watch": "^0.19.1"
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-preprocess": "latest",
+    "gulp-rename": "latest",
+    "gulp-requirejs-optimize": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-variables": "^1.1.1",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglifycss": "latest",
+    "requirejs": "latest",
+    "watch": "latest"
   },
-  "scripts": {    
+  "scripts": {
     "requirejsOptimize": "gulp requirejsOptimize",
-	"watch" : "gulp watch"
+    "watch": "gulp watch"
   },
   "author": "dimomaint",
   "license": "ISC"

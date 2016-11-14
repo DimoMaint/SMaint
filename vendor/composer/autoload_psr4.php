@@ -21,6 +21,7 @@ return array(
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'Process\\' => array($baseDir . '/ESDEV/EServices/source/Process'),
+    'Planning\\' => array($baseDir . '/ESDEV/EServices/source/_module/Planning'),
     'PhpClass\\' => array($baseDir . '/ESDEV/EServices/source/PhpClass'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'MenuBundle\\' => array($baseDir . '/ESDEV/EServices/source/_module/MenuBundle'),

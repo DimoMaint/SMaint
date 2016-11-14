@@ -11,7 +11,7 @@
         "monolog/monolog": "@stable",
         "swiftmailer/swiftmailer": "@stable",
         "html2text/html2text": "@stable",
-        "tecnickcom/tcpdf": "@stable",		
+        "tecnickcom/tcpdf": "@stable",
         "google/apiclient": "@stable"
     },
     "autoload": {
@@ -25,7 +25,8 @@
             "Process\\": "ESDEV/EServices/source/Process",
             "MenuBundle\\": "ESDEV/EServices/source/_module/MenuBundle",
             "ListAndForm\\": "ESDEV/EServices/source/_module/ListAndForm",
-            "StandardQueryBundle\\": "ESDEV/EServices/source/StandardQueryBundle"
+            "StandardQueryBundle\\": "ESDEV/EServices/source/StandardQueryBundle",
+            "Planning\\": "ESDEV/EServices/source/_module/Planning"
         }
     }
 }

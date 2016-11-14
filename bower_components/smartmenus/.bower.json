@@ -10,9 +10,9 @@
     "mobile",
     "ui"
   ],
-  "version": "1.0.0",
-  "version_keyboard_addon": "0.3.0",
-  "version_bootstrap_addon": "0.3.0",
+  "version": "1.0.1",
+  "version_keyboard_addon": "0.3.1",
+  "version_bootstrap_addon": "0.3.1",
   "main": [
     "dist/jquery.smartmenus.js"
   ],
@@ -42,11 +42,11 @@
     ".gitignore",
     "Gruntfile.js"
   ],
-  "_release": "1.0.0",
+  "_release": "1.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "1.0.0",
-    "commit": "9a2745c0c1622a775d1c631644425def7cee0dbd"
+    "tag": "1.0.1",
+    "commit": "7f5845d0129caff70415f3a7b1acd6265f3011ee"
   },
   "_source": "https://github.com/vadikom/smartmenus.git",
   "_target": "*",
