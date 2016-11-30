@@ -25,7 +25,8 @@
     "watch": "latest"
   },
   "scripts": {
-    "requirejsOptimize": "gulp requirejsOptimize",
+	"default": "gulp default",
+	"requirejsOptimize": "gulp requirejsOptimize",
     "watch": "gulp watch"
   },
   "author": "dimomaint",
