@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AccueilBundle\\Chart' => $baseDir . '/ESDEV/EServices/source/AccueilBundle/Chart.php',
     'App\\Controllers\\EquipmentController' => $baseDir . '/ESDEV/EServices/api/App/Controllers/EquipmentController.php',
     'App\\Controllers\\MissionController' => $baseDir . '/ESDEV/EServices/api/App/Controllers/MissionController.php',
     'App\\Controllers\\SessionController' => $baseDir . '/ESDEV/EServices/api/App/Controllers/SessionController.php',

@@ -26,7 +26,8 @@
             "MenuBundle\\": "ESDEV/EServices/source/_module/MenuBundle",
             "ListAndForm\\": "ESDEV/EServices/source/_module/ListAndForm",
             "StandardQueryBundle\\": "ESDEV/EServices/source/StandardQueryBundle",
-            "Planning\\": "ESDEV/EServices/source/_module/Planning"
+            "Planning\\": "ESDEV/EServices/source/_module/Planning",
+            "AccueilBundle\\": "ESDEV/EServices/source/AccueilBundle"
         }
     }
 }

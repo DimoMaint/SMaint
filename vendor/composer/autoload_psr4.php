@@ -36,4 +36,5 @@ return array(
     'App\\Services\\' => array($baseDir . '/ESDEV/EServices/api/App/Services'),
     'App\\Models\\' => array($baseDir . '/ESDEV/EServices/api/App/Models'),
     'App\\Controllers\\' => array($baseDir . '/ESDEV/EServices/api/App/Controllers'),
+    'AccueilBundle\\' => array($baseDir . '/ESDEV/EServices/source/AccueilBundle'),
 );
