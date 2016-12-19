@@ -235,6 +235,7 @@ class ComposerStaticInite769f0ad24fdc65b7c72d5526126fe7b
 
     public static $classMap = array (
         'AccueilBundle\\Chart' => __DIR__ . '/../..' . '/ESDEV/EServices/source/AccueilBundle/Chart.php',
+        'AccueilBundle\\ChartFullscreen' => __DIR__ . '/../..' . '/ESDEV/EServices/source/AccueilBundle/ChartFullscreen.php',
         'App\\Controllers\\EquipmentController' => __DIR__ . '/../..' . '/ESDEV/EServices/api/App/Controllers/EquipmentController.php',
         'App\\Controllers\\MissionController' => __DIR__ . '/../..' . '/ESDEV/EServices/api/App/Controllers/MissionController.php',
         'App\\Controllers\\SessionController' => __DIR__ . '/../..' . '/ESDEV/EServices/api/App/Controllers/SessionController.php',

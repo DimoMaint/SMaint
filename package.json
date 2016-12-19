@@ -10,8 +10,10 @@
   "devDependencies": {
     "del": "latest",
     "gulp": "latest",
+    "gulp-bower": "0.0.13",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "latest",
+    "gulp-composer": "^0.4.0",
     "gulp-concat": "latest",
     "gulp-concat-css": "latest",
     "gulp-preprocess": "latest",
@@ -25,9 +27,11 @@
     "watch": "latest"
   },
   "scripts": {
-	"default": "gulp default",
-	"requirejsOptimize": "gulp requirejsOptimize",
-    "watch": "gulp watch"
+    "default": "gulp default",
+    "requirejsOptimize": "gulp requirejsOptimize",
+    "watch": "gulp watch",
+    "update": "npm install && npm prune && bower install && bower prune",
+    "first-run": "npm install -g gulp bower && npm run update"
   },
   "author": "dimomaint",
   "license": "ISC"
