@@ -1,38 +1,38 @@
 {
-  "name": "dimomaintservices",
-  "version": "7.0.0",
-  "description": "Sav program",
-  "main": "gulpfile.js",
-  "directories": {
-    "test": "tests"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "del": "latest",
-    "gulp": "latest",
-    "gulp-bower": "0.0.13",
-    "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "latest",
-    "gulp-composer": "^0.4.0",
-    "gulp-concat": "latest",
-    "gulp-concat-css": "latest",
-    "gulp-preprocess": "latest",
-    "gulp-rename": "latest",
-    "gulp-requirejs-optimize": "latest",
-    "gulp-sass": "latest",
-    "gulp-sass-variables": "^1.1.1",
-    "gulp-sourcemaps": "latest",
-    "gulp-uglifycss": "latest",
-    "requirejs": "latest",
-    "watch": "latest"
-  },
-  "scripts": {
-    "default": "gulp default",
-    "requirejsOptimize": "gulp requirejsOptimize",
-    "watch": "gulp watch",
-    "update": "npm install && npm prune && bower install && bower prune",
-    "first-run": "npm install -g gulp bower && npm run update"
-  },
-  "author": "dimomaint",
-  "license": "ISC"
+    "name": "dimomaintservices",
+    "version": "7.0.0",
+    "description": "Sav program",
+    "main": "gulpfile.js",
+    "directories": {
+        "test": "tests"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "del": "latest",
+        "gulp": "latest",
+        "gulp-bower": "latest",
+        "gulp-clean": "latest",
+        "gulp-clean-css": "latest",
+        "gulp-composer": "latest",
+        "gulp-concat": "latest",
+        "gulp-concat-css": "latest",
+        "gulp-preprocess": "latest",
+        "gulp-rename": "latest",
+        "gulp-requirejs-optimize": "latest",
+        "gulp-sass": "latest",
+        "gulp-sass-variables": "latest",
+        "gulp-sourcemaps": "latest",
+        "gulp-uglifycss": "latest",
+        "requirejs": "latest",
+        "watch": "latest"
+    },
+    "scripts": {
+        "default": "gulp default",
+        "requirejsOptimize": "gulp requirejsOptimize",
+        "watch": "gulp watch",
+        "update": "npm install && npm prune && bower install && bower prune",
+        "first-run": "npm install -g gulp bower && npm run update"
+    },
+    "author": "dimomaint",
+    "license": "ISC"
 }

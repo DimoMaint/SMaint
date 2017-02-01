@@ -20,7 +20,7 @@
         "jquery-ui": "latest",
         "autosize": "latest",
         "bootbox": "latest",
-        "bootstrap-sass": "latest",
+        "bootstrap-sass": "3.*",
         "eonasdan-bootstrap-datetimepicker": "4.15.35",
         "bootstrap-multiselect": "latest",
         "font-awesome": "latest",
